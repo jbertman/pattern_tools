@@ -10,12 +10,12 @@ print pattern_tools.pattern_offset('0x69413269')
 """prints [*] Exact match at offset 247"""
 ```
 Arguments for relevant functions are:
-pattern_create(length, set_a, set_b, set_c)
+`pattern_create(length, set_a, set_b, set_c)`
 
 Where length is the length of the pattern, and sets a through c are character sets to use in pattern generation(optional)
 The pattern is returned as a string object.
 
-pattern_offset(value, length)
+`pattern_offset(value, length)`
 
 Where value is the string in hex you want to find, and length is the pattern length to search through (default = 8192)
 TODO: Partial matching, reverse endianness
